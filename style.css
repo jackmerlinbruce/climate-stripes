@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Noto Serif', serif;
+}
+div.title * {
+    margin: 0;
+    padding: 0;
+}
+div.title {
+    position: absolute;
+    bottom: 40vh;
+    right: 50px;
+    color: black;
+    opacity: 0.9;
+    z-index: -1;
+    text-align: left;
+    margin: 20px;
+    width: 400px;
+}
+div.title h1 {
+    font-size: 250%
+}
+div.title .desc {
+    opacity: 0.5;
+}
+div.title .author {
+    font-size: 70%;
+    font-weight: 900;
+    margin-top: 30px;
+}
+text {
+    opacity: 0.9;
+    font-weight: 900;
+    fill: white;
+}
+text.tooltip {
+    fill: black;
+}
+/* text.tooltip#label-temp {
+    text-anchor: start;
+}
+text.tooltip#label-year {
+    text-anchor: end;
+} */
+text#falling-years {
+    /* fill: black; */
+}
+text#label-date {
+    text-anchor: start;
+    user-select: none;
+}
+text#title {
+    text-anchor: middle;
+    fill: black;
+}
+div.disable-button {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 25px;
+    text-align: center;
+    opacity: 0.9;
+}
+div.disable-button:hover {
+    width: 300px;
+    height: 500px;
+    transition: 200ms ease-in-out;
+}
+div.disable-button.on-hover {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        width: 100%;
+        left: 10px;
+    }
+    text#label-date {
+        font-size: 10px;
+    }
+
+}
